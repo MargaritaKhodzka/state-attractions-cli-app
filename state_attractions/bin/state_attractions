@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "state_attractions"
+require_relative "../lib/state_attractions"
 
 StateAttractions::CLI.new.call
