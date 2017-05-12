@@ -8,9 +8,9 @@ class StateAttractions::CLI
 
   def list_states
     puts "Welcome, Traveller! Which state do you want to learn more about?"
-    @states = StateAttractions::Attraction.all
+    @states = StateAttractions::State.all
     @states.each.with_index(1) do |state, i|
-      puts "#{i}. #{state.name} - #{state.attraction} - #{state.description}"
+      puts "#{i}. #{state.name}"
     end
   end
 
