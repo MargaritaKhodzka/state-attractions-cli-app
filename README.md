@@ -1,6 +1,6 @@
 # StateAttractions
 
-Welcome to the State Attractions! This Ruby Gem provides a CLI to view the 50 tourist attractions you can visit in each State, from Alabama to Wyoming, as per Thrillist website. Enjoy the tour!
+Welcome to the State Attractions! This Ruby Gem provides a CLI for viewing the 50 tourist attractions you can visit in each State, from Alabama to Wyoming, as per Thrillist website. Enjoy the tour!
 
 ## Installation
 
