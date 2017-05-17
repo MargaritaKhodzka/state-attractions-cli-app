@@ -2,5 +2,5 @@
 
 Specs:
 - [x] Have a CLI for interfacing with the application
-- [ ] Pull data from an external source
-- [ ] Implement both list and detail views
+- [x] Pull data from an external source - used Bundler to build the Gem, scraped https://www.thrillist.com/
+- [x] Implement both list and detail views

@@ -7,8 +7,8 @@ class StateAttractions::State
   def self.new_from_index_page(s)
     self.new(
     s.css("h2.body-text__paragraph-header.font--h2").text.strip,
-    s.css("a").attribute("href").value,
-    s.css(".body-text__paragraph-text.font--body.has-spacing").text.strip
+    s.css("a").attribute("href").text,
+    s.css("p.body-text__paragraph-text.font--body.has-spacing").text.strip
     )
   end
 
@@ -22,5 +22,5 @@ class StateAttractions::State
   def self.all
     @@all
   end
-  
+
 end
