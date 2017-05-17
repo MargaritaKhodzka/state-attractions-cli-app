@@ -1,28 +1,15 @@
 # StateAttractions
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/state_attractions`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to the State Attractions! This Ruby Gem provides a CLI to view the 50 tourist attractions you can visit in each State, from Alabama to Wyoming, as per Thrillist website. Enjoy the tour!
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'state_attractions'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install state_attractions
 
 ## Usage
 
-TODO: Write usage instructions here
+Type the below and follow the on screen instructions:
+./bin/state_attractions
 
 ## Development
 
@@ -38,4 +25,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/'mkhod
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

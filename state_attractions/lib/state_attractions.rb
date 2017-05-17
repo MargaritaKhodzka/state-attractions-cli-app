@@ -1,7 +1,4 @@
-require "nokogiri"
-require "pry"
-require "open-uri"
+module StateAttractions
+end
 
-require_relative "state_attractions/version"
-require_relative "state_attractions/cli"
-require_relative "state_attractions/state"
+require_relative '../config/environment'
