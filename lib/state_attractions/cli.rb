@@ -8,8 +8,8 @@ class StateAttractions::CLI
   end
 
   def list_states
-    @states = StateAttractions::State.all
-    @states.each.with_index do |state, i|
+    states = StateAttractions::State.all
+    states.each.with_index(1) do |state, i|
       puts "#{i}. #{state.name}"
     end
   end
@@ -20,8 +20,8 @@ class StateAttractions::CLI
       puts "Enter the number of the state you would like more information on [1-50], type [list] to see the states again, or type [exit]:"
       input = gets.strip
 
-      if input.to_i > 0 && input.to_i <= 50
-        the_state = @states[input.to_i]
+      if input.to_i.between?(1, StateAttractions::State.all.size)
+        the_state = StateAttractions::State.find(input.to_i - 1)
         puts "#{the_state.name} - #{the_state.attraction}\nLearn more: #{the_state.url}"
       elsif input == "list"
         list_states

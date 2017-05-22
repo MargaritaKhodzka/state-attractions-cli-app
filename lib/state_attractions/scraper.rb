@@ -9,9 +9,16 @@ class StateAttractions::Scraper
   end
 
   def make_states
-    scrape_states_index.each do |s|
-      StateAttractions::State.new_from_index_page(s)
+    scrape_states_index.each_with_index do |s, i|
+      if i != 0
+        StateAttractions::State.new(
+        s.css("h2.body-text__paragraph-header.font--h2").text.strip,
+        s.css("p.body-text__paragraph-text.font--body.has-spacing").text.strip,
+        s.css("a").attribute("href").value
+        )
+      end
     end
   end
+
 
 end
