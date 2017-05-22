@@ -22,7 +22,7 @@ class StateAttractions::CLI
 
       if input.to_i > 0 && input.to_i <= 50
         the_state = @states[input.to_i]
-        puts "#{the_state.name} - #{the_state.description}"
+        puts "#{the_state.name} - #{the_state.attraction}\nLearn more: #{the_state.url}"
       elsif input == "list"
         list_states
       elsif input == "exit"
